@@ -20,7 +20,10 @@ on:
       EXTRA_KEY_BRANCH:
         description: 'EXTRA_KEY_BRANCH (leave blank if you only use unisoc keys)'
         required: false
-
+        
+permissions:
+  contents: write
+  
 jobs:
   build:
     runs-on: ubuntu-latest
