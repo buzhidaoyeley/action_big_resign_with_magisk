@@ -1,6 +1,8 @@
 name: sign-one-partition-only-magisk
 
 on:
+  permissions:
+    contents: write
   workflow_dispatch:
     inputs:
       IMG_URL:    
