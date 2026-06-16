@@ -1,8 +1,6 @@
 name: sign-one-partition-only-magisk
 
 on:
-  permissions:
-    contents: write
   workflow_dispatch:
     inputs:
       IMG_URL:    
@@ -23,6 +21,9 @@ on:
         description: 'EXTRA_KEY_BRANCH (leave blank if you only use unisoc keys)'
         required: false
 
+permissions:
+  contents: write
+  
 jobs:
   build:
     runs-on: ubuntu-latest
